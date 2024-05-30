@@ -62,10 +62,10 @@ replay_pid*
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
-
+.idea/
 # AWS User-specific
 .idea/**/aws.xml
-
+java_day1.iml
 # Generated files
 .idea/**/contentModel.xml
 
