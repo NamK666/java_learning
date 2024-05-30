@@ -21,5 +21,55 @@ public class Test {
     t2 = 20;
     t3 = 70;
     System.out.println(t1 + t2 + t3);
+
+    int D = 1;
+    int d = 2;
+    // 둘이 다른 거임. (대소문자 구별함)
+
+    /* int int = 1; */    // 변수명으로 예약어를 사용못함. (int는 예약어임)
+
+    int firstName = 1; // 컴퓨터 메모리 어딘가에 1이라는 값이 저장되어있는것을 끄집어 오는 것이다.
+    /* 자바가 켜져있는 동안에는 메모리에 저장되어있는 것임. 반면, 자바가 꺼지는 순간 X) */
+
+    /* 정수형 자료형 (중요) */
+    /* int A = 1;
+    byte B = 2;
+    long C = 3;
+    short D = 4; */
+    /* 실수형 자료형 */
+    float E = 0.1f; //f를 뒤에 붙여줘야 한다 꼭!
+    double F = 0.2;
+
+    char G = 'g';
+    System.out.println(G);
+
+    boolean isTrue = true;
+    boolean isFalse = false;
+
+
+    String str = "Hello World"; // string은 문자열을 위한 클래스라고 생각하면 됨.
+
+    /*
+    int x = 21500000000; // int가 커버가능한 숫자를 초과해서 오류 뜸.
+    System.out.println(x);
+    */
+
+   char c1 = 'A';
+   char c2 = 65;
+   char c3 = '\u0041';
+
+   char c4 = '가';
+   char c5 = 44032;
+   char c6 = '\uac00';
+
+   int uniCode = c1;
+
+   System.out.println(c1); // A
+   System.out.println(c2); // A
+   System.out.println(c3); // A
+   System.out.println(c4); // 가
+   System.out.println(c5); // 가
+   System.out.println(c6); // 가
+   System.out.println(uniCode); // 65
   }
 }
