@@ -1,4 +1,5 @@
-public class Test {
+import javax.swing.*;
+import java.util.Arrays;
 
   public static void main(String[] args) {
     int draco = 10; // 컴퓨터의 메모리에 이 정보가 올라감. (a는 integer타입을 갖고있으며, 10이라는 값을 갖고있다) / 변수를 선언하면서 값을 넣었다.
@@ -36,7 +37,7 @@ public class Test {
     byte B = 2;
     long C = 3;
     short D = 4; */
-    /* 실수형 자료형 */
+    /* 실수형 자료형
     float E = 0.1f; //f를 뒤에 붙여줘야 한다 꼭!
     double F = 0.2;
 
@@ -48,12 +49,16 @@ public class Test {
 
 
     String str = "Hello World"; // string은 문자열을 위한 클래스라고 생각하면 됨.
+    */
+
+
 
     /*
     int x = 21500000000; // int가 커버가능한 숫자를 초과해서 오류 뜸.
     System.out.println(x);
     */
 
+    /*
    char c1 = 'A';
    char c2 = 65;
    char c3 = '\u0041';
@@ -71,5 +76,52 @@ public class Test {
    System.out.println(c5); // 가
    System.out.println(c6); // 가
    System.out.println(uniCode); // 65
+
+  */
+
+    /*
+    // 형변환 (타입을 변환시키는 것) //
+    short sVal = 10;
+    short result = (short)(sVal + 10); //
+    System.out.println(result);
+
+     */
+
+    /*
+    float myFloat = 9.75f;
+    float anotherFloat = myFloat * 2;
+    System.out.println("Original float value: " + (int) myFloat);
+    System.out.println("Calculated float value: " + (byte) anotherFloat);
+    */
+
+
+    /*
+    boolean isTrue = false;
+    if (!isTrue) {
+      System.out.println("이건 트루입니다.");
+    } else {
+      System.out.println("이건 폴스입니다.");
+    }
   }
-}
+
+
+
+    int[] arr = {1, 2, 3, 4, 5}; // int 배열이니까 안에 들어있는 숫자는 정수여야만 함.
+    double[] arr2 = {1, 2, 3, 4.1, 5.0}; // 이건 double이니까 가능.
+
+    */
+
+    /*
+    int a = 10;
+    int[] arr = {1,2,3,4,5};
+    System.out.println(arr[3]);
+
+     */
+
+
+    int xyc = 101;
+    System.out.println(xyc);
+    xyc = 102;
+    System.out.println(xyc);
+  }
+
