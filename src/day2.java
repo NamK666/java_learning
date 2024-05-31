@@ -46,6 +46,62 @@ public class day2 {
     System.out.println(i.concat("!")); // Hello! (concat은 영구적으로 바꾸는것임)
     System.out.println(i+"!"); // Hello!
 
+    String name1 = "Tim";
+    int age1 = 30;
+    String name2 = "Anna";
+    int age2 = 45;
+    String format = String.format("%s의 나이는 %s세 입니다", name1, age1);
+    String format1 = String.format("%s의 나이는 %s세 입니다", name2, age2);
+    System.out.println(format); // Tim의 나이는 30세 입니다
+    System.out.println(format1); // Anna의 나이는 45세 입니다
+
+
+
+    String result = "";
+    result += "Hello";
+    result += "Java";
+    result += "World";
+    System.out.println(result); // HelloJavaWorld
+
+    StringBuilder sb = new StringBuilder();
+    sb.append("Hello "); //append : 추가하다 (간단한 문자열은 String으로 하는데, 문자열을 이어붙이는 것은 무조건 StringBuilder of Buffer)
+    sb.append("java");
+    sb.append("World");
+    System.out.println(sb); // Hello javaWorld
+
+    StringBuffer sf = new StringBuffer();
+    sf.append("Hello ");
+    sf.append("java");
+    sf.append("World");
+    System.out.println(sf); // Hello javaWorld
+
+    StringBuffer hi = new StringBuffer();
+    hi.append("Hello");
+    hi.insert(2,"World");
+    hi.insert(2,"World");
+    hi.insert(2,"World");
+    hi.insert(2,"World");
+    System.out.println(hi); // HeWorldWorldWorldWorldllo
+
+    // 100개의 원소를 가진 정수 배열란을 만드시오 //
+    int[] arr = new int[100];
+    System.out.println(arr); // [I@153f5a29 <- 메모리 주소값임. (참조타입)
+    System.out.println(arr[0]); // 0 (0값으로 초기화됨)
+
+    // 문자열 1000개 //
+    String[] arr2 = new String[1000];
+    System.out.println(arr[0]);
+
+    int[] arr3 = {1,2,3};
+    System.out.println(arr3[2]); // out of bound 발생 (3이 없기에)
+
+    int positive = 10;
+    int negative = -10;
+    System.out.println("양의 부호 연산자 적용: "+ (+positive)); // 10
+    System.out.println("음의 부호 연산자 적용: "+ (-positive)); // -10
+    System.out.println("음의 부호 연산자로 부호 반전: "+ (+negative)); // -10
+    System.out.println("음의 부호 연산자로 다시 부호 반전: "+ (-negative)); // 10
+
 
   }
 }
