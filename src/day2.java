@@ -54,6 +54,7 @@ public class day2 {
 
     String h = "a:b:c:d";
     String[] split = h.split(":");
+    System.out.println(h);
 
     String i = "Hello";
     System.out.println(i.concat("!")); // Hello! (concat은 영구적으로 바꾸는것임)
@@ -75,7 +76,7 @@ public class day2 {
     System.out.println(result); // HelloJavaWorld
 
     StringBuilder sb = new StringBuilder();
-    sb.append("Hello "); // append : 추가하다 (간단한 문자열은 String으로 하는데, 문자열을 이어붙이는 것은 무조건 StringBuilder of
+    sb.append("Hello "); // append : 추가하다 (간단한 문자열은 String으로 하는데, 문자열을 이어붙이는 것은 무조건 StringBuilder or
     // Buffer)
     sb.append("java");
     sb.append("World");
@@ -95,6 +96,15 @@ public class day2 {
     hi.insert(2, "World");
     System.out.println(hi); // HeWorldWorldWorldWorldllo
 
+    // substring //
+    StringBuffer raf = new StringBuffer();
+    raf.append("hello");
+    raf.append("draco");
+    raf.append("lucky");
+    raf.append("boy");
+    System.out.println(raf);
+    System.out.println(raf.substring(5,10));
+
     // 100개의 원소를 가진 정수 배열란을 만드시오 //
     int[] arr = new int[100];
     System.out.println(arr); // [I@153f5a29 <- 메모리 주소값임. (참조타입)
@@ -106,6 +116,7 @@ public class day2 {
 
     int[] arr3 = {1, 2, 3};
     System.out.println(arr3[2]); // out of bound 발생 (3이 없기에)
+
 
     int positive = 10;
     int negative = -10;
@@ -131,7 +142,7 @@ public class day2 {
 
     boolean isRaining = true;
     if(isRaining) {
-      System.out.println("하늘에서 비가 와요");
+      System.out.println("하늘에서 비가 와요");  // 하늘에서 비가 와요
     }
     if(!isRaining) {
       System.out.println("김태희가 안옵니다");
@@ -139,9 +150,16 @@ public class day2 {
 
     boolean isSunny = false;
     if(!isSunny){
-      System.out.println("날씨가 맑아요");
+      System.out.println("날씨가 맑아요");  // 날씨가 맑아요
     }else {
       System.out.println("집에서 쉬어야죠");
+    }
+
+    boolean isTired = true;
+    if(!isTired) {
+      System.out.println("매우 피곤하네요");
+    }else {
+      System.out.println("아주 쌩쌩합니다");
     }
   }
 }
