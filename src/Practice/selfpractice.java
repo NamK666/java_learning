@@ -28,5 +28,32 @@ public class selfpractice {
     long j = 98749358234L;
     int k = (int)j;
     System.out.println(k);
+
+    String strtesting = "스트링 시험해보자";
+    String strtesting2 = new String("스트링 뉴 시험");
+    System.out.println(strtesting); // 스트링 시험해보자
+    System.out.println(strtesting2); // 스트링 뉴 시험
+    System.out.println(strtesting.equals(strtesting2)); // false
+
+    String starboy = "선언";
+    String starboy2 = new String("선언");
+    System.out.println(starboy.equals(starboy2)); // true (문자값 그대로 비교)
+    System.out.println(starboy == starboy2); // false (주소값 비교)
+
+    String indextesting = "Hello World";
+    System.out.println(indextesting.indexOf("")); // 0
+    System.out.println(indextesting.lastIndexOf("orld")); // 7
+
+    String replacetest = "Draco World";
+    System.out.println(replacetest.replaceAll("Draco","NamKyung"));
+    System.out.println(replacetest.replaceFirst("Draco","NamKyung"));
+
+    String substringtest = "dr123a45c42o";
+    System.out.println(substringtest.substring(0,2)+substringtest.substring(5,6)+substringtest.substring(8,9)+substringtest.substring(11,12)); // draco
+
+    String splittest = "a:b:c:d:e";
+    String[] split = splittest.split(":");
+    String split2 = new String (split[4]);
+    System.out.println(split2);
   }
 }
