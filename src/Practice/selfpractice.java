@@ -1,3 +1,5 @@
+package Practice;
+
 public class selfpractice {
   public static void main(String[] args) {
     String a = "happy";
@@ -15,5 +17,16 @@ public class selfpractice {
 
     long f = 7123214124124L;
     System.out.println(f);
+
+    float g = 3.14f;
+    System.out.println(g);
+
+    double h = 10.574;
+    int i = (int)h;
+    System.out.println(i);
+
+    long j = 98749358234L;
+    int k = (int)j;
+    System.out.println(k);
   }
 }
