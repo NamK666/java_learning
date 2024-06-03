@@ -96,5 +96,55 @@ public class day3 {
     x%30==0 && ( (x%2==0)||(x%5==0) );
 
      */
+
+    // 논리곱
+    System.out.println(1 & 1); // 1
+    System.out.println(1 & 0); // 0
+    System.out.println(0 & 0); // 0
+
+    // 논리합
+    System.out.println(1 | 1); // 1
+    System.out.println(1 | 0); // 1
+    System.out.println(0 | 0); // 0
+
+    // 삼항 연산자
+    int score = 95;
+    char grade = (score > 90) ? 'A' : 'B';
+    System.out.println(grade); // A
+    // 90점 이상이고 5의 배수일 때 문자열 good, 아니라면 bad를 입력하시오.
+    String grade2 = (score >= 90 && score % 5 == 0) ? "good" : "bad";
+
+    // 90점이상이면 good, 아니면 bad를 출력하게 if문으로 풀어보기.
+    if (score > 90) {
+      System.out.println("good");
+    } else {
+      System.out.println("bad");
+    }
+
+    int number = 10;
+    if (number > 10) {
+      System.out.println("number는 10보다 큽니다");
+    } else if (number < 10) {
+      System.out.println("number는 10보다 작습니다.");
+      if (number > 5) {
+        System.out.println("number는 5보다 큽니다.");
+      }
+    } else {
+      System.out.println("number는 10입니다.");
+    }
+
+    // if, else if, else 문 활용하기 //
+    int h = 1;
+    int i = 2;
+    if (h > i) {
+      System.out.println("h is greater than i");
+    } else if (h == i) {
+      System.out.println("h and i are equal");
+    } else {
+      System.out.println("h is less than i");
+    }
+
+    // 위에 것을 삼항연산자로 바꿔보기 //
+
   }
 }
