@@ -69,5 +69,18 @@ public class selfpractice {
 
     String concattest = "apple";
     System.out.println(concattest.concat(" banana"));
+
+    String name1 = "Nam";
+    int age1 = 25;
+    String name2 = "Draco";
+    int age2 = 30;
+    String format = String.format("%s의 나이는 %s세 입니다.",name1,age1);
+    System.out.println(format);
+
+    StringBuilder sb = new StringBuilder();
+    sb.append("Happy");
+    sb.append("Draco");
+    sb.append("World");
+    System.out.println(sb); // HappyDracoWorld
   }
 }
