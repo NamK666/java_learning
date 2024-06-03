@@ -148,7 +148,88 @@ public class selfpractice {
       System.out.println(cC);
     }
 
-    //
+    // 퀴즈 2 //
+    boolean xX = true;
+    boolean yY = false;
+    boolean zZ = true;
+    if (xX && !yY) {
+      System.out.println("조건 1 충족");
+    } else if ((yY && zZ) || (!xX && !zZ)) {
+      System.out.println("조건 2 충족");
+    } else if (xX || yY || zZ) {
+      System.out.println("적어도 하나는 참");
+    } else if (!xX && !yY && !zZ) {
+      System.out.println("모두 거짓");
+    }
 
+    // Switch 문 //
+    int data = 10;
+    switch (data) {
+      case 1:
+        System.out.println("1입니다.");
+        break;
+      case 2:
+        System.out.println("2입니다.");
+        break;
+      case 10:
+        System.out.println("10입니다.");
+        break;
+      default:
+        System.out.println("알 수 없는 숫자입니다.");
+        break;
+    }
+    // Switch 문 요일 문제 실습 //
+    String day = "Tuesday";
+    switch (day) {
+      case "Monday":
+        System.out.println("월요일입니다.");
+        break;
+        case "Tuesday":
+        System.out.println("화요일입니다.");
+        break;
+        case "Wednesday":
+        System.out.println("수요일입니다.");
+        break;
+      default:
+        System.out.println("너 알아서해라");
+        break;
+    }
+
+    // 퀴즈 1 //
+    char gradE = 'A';
+    switch (gradE) {
+      case 'A':
+        System.out.println("Excellent");
+        break;
+        case 'B':
+        System.out.println("Good");
+        break;
+        case 'C':
+        System.out.println("average");
+        break;
+        case 'D':
+        System.out.println("Below average");
+        break;
+      case 'F':
+        System.out.println("Fail");
+        break;
+    }
+
+    // 문제 4 //
+    int scorE = 85;
+    switch (scorE / 10) {
+      case 10, 9:
+        System.out.println("A");
+        break;
+        case 8:
+        System.out.println("B");
+        break;
+      case 7:
+        System.out.println("C");
+        break;
+      default:
+        System.out.println("F");
+        break;
+    }
   }
 }
