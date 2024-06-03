@@ -74,7 +74,7 @@ public class selfpractice {
     int age1 = 25;
     String name2 = "Draco";
     int age2 = 30;
-    String format = String.format("%s의 나이는 %s세 입니다.",name1,age1);
+    String format = String.format("%s의 나이는 %s세 입니다.", name1, age1);
     System.out.println(format);
 
     StringBuilder sb = new StringBuilder();
@@ -86,7 +86,69 @@ public class selfpractice {
     // 삼항 연산자 //
     // 90점 이상이고, 5의 배수 일때 문자열 good, 아니라면 bad 를 입력하시오 //
     int score = 90;
-    String grade = (score>=90 && score % 5 ==0) ? "good" : "bad";
+    String grade = (score >= 90 && score % 5 == 0) ? "good" : "bad";
     System.out.println(grade); // good
+
+    // 75점 이상이고, 10의 배수 일때 문자열 A, 아니라면 F 를 입력하시오 //
+    int score1 = 80;
+    char G = (score1 >= 75 && score1 % 10 == 0) ? 'A' : 'F';
+    System.out.println(G); // A
+
+    // if문 //
+    int aa = 10;
+    int bb = 17;
+    if (aa > bb) {
+      System.out.println("aa가 bb보다 크다");
+    } else if (aa == bb) {
+      System.out.println("aa와 bb가 같다");
+    } else {
+      System.out.println("aa가 bb보다 작다");
+    }
+    // 위 if문을 삼항 연산자로 //
+    String ifresult = (aa > bb) ? "aa가 bb보다 크다" : (aa == bb) ? "aa와 bb가 같다" : "aa가 bb보다 작다";
+    System.out.println(ifresult);
+
+    // 변수 xx에 10이 저장되어 있습니다. x가 양수인지, 음수인지, 아니면 0인지를 판별하는 코드를 작성하세요. (삼항연산자) //
+    int xx = 10;
+    char xxStatus = (xx > 0) ? '+' : (xx == 0) ? '0' : '-';
+    System.out.println(xxStatus); // +
+
+    // 변수 sco에 75가 저장되어 있습니다. sco에 따라 학점을 출력하는 코드를 작성하세요.
+    int sco = 75;
+    if (sco >= 90) {
+      System.out.println("A");
+    } else if (sco >= 80 && sco < 90) {
+      System.out.println("B");
+    } else if (sco >= 70 && sco < 80) {
+      System.out.println("C");
+    } else {
+      System.out.println("F");
+    }
+    // 위 조건을 삼항 연산자로! //
+    char scoGrade =
+        (sco >= 90) ? 'A' : (sco >= 80 && sco < 90) ? 'B' : (sco >= 70 && sco < 80) ? 'C' : 'F';
+    System.out.println(scoGrade);
+
+    // 변수 year에 2023이 저장되어 있습니다. year가 윤년인지 아닌지를 판별하는 코드를 작성하세요. //
+    // 윤년의 조건: 연도가 4의 배수이면서, 100의 배수가 아니거나 400의 배수인 해 //
+    int year = 2023;
+    String isYeapYear =
+        (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) ? "윤년입니다" : "윤년이 아닙니다";
+    System.out.println(isYeapYear);
+
+    // 변수 aA에 10, bB에 20, cC에 30이 저장되어 있습니다. 세 변수 중 가장 큰 값을 출력하는 코드를 작성하세요. //
+    int aA = 10;
+    int bB = 20;
+    int cC = 30;
+    if (aA > bB && aA > cC) {
+      System.out.println(aA);
+    } else if (bB > aA && bB > cC) {
+      System.out.println(bB);
+    } else {
+      System.out.println(cC);
+    }
+
+    //
+
   }
 }
