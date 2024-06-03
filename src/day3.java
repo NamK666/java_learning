@@ -369,5 +369,8 @@ public class day3 {
         System.out.println("JavaScript is blah blah");
         break;
     }
+
+    System.out.println(7/2); // 3
+    System.out.println(7%2); // 1
   }
 }

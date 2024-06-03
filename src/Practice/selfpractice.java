@@ -82,5 +82,11 @@ public class selfpractice {
     sb.append("Draco");
     sb.append("World");
     System.out.println(sb); // HappyDracoWorld
+
+    // 삼항 연산자 //
+    // 90점 이상이고, 5의 배수 일때 문자열 good, 아니라면 bad 를 입력하시오 //
+    int score = 90;
+    String grade = (score>=90 && score % 5 ==0) ? "good" : "bad";
+    System.out.println(grade); // good
   }
 }
