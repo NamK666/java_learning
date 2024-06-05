@@ -162,8 +162,25 @@ public class selfpractice2 {
       }
     }
 
-     */
-    // continue 예시 //
 
+    // continue 예시 //
+    int number = 0;
+    while (number < 10) {
+      number++;
+      if (number == 3) {
+        continue;
+      } else {
+        System.out.println("현재 숫자: " + number);
+      }
+    }
+    */
+
+    // 문제 //
+    for (int i=1; i<=10; i++){
+      if(i==4 || i==7){
+        continue;
+      }
+      System.out.println(i);
+    }
   }
 }
