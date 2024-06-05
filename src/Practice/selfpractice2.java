@@ -173,7 +173,7 @@ public class selfpractice2 {
         System.out.println("현재 숫자: " + number);
       }
     }
-    */
+
 
     // 문제 //
     for (int i=1; i<=10; i++){
@@ -181,6 +181,75 @@ public class selfpractice2 {
         continue;
       }
       System.out.println(i);
+
+
+    int a = 10;
+    int b = 4;
+    int c = a/b;
+    double d = a/b;
+    double e = (double) a/b;
+
+    System.out.println(c); // 2
+    System.out.println(d); // 2.0
+    System.out.println(e); // 2.5
+
+    // 삼항 연산자 //
+    // 90점 이상이고 5의 배수일 때 문자열 good, 아니라면 bad를 입력하시오.
+    int score = 95;
+    String grade = (score>=90 && score%5==0 ? "good" : "bad" );
+    System.out.println(grade);
+
+    boolean x = true;
+    boolean y = false;
+    boolean z = true;
+    if(x && !y){
+      System.out.println("조건1충족");
+    }else if((y && z)||(!x && !z)){
+      System.out.println("조건2충족");
+    }else if(x||y||z){
+      System.out.println("적어도 하나는 참");
+    }else if(!x&&!y&&!z){
+      System.out.println("모두 거짓");
+    }
+
+    // Switch문 //
+    String day = "목요일";
+    switch (day){
+      case "월요일":
+        System.out.println("헬요일이다.");
+        break;
+      case "화요일":
+        System.out.println("화요일이네.");
+        break;
+      case "수요일":
+        System.out.println("절반 왔구나.");
+        break;
+      case "목요일":
+        System.out.println("거의 다왔다.");
+        break;
+      case "금요일":
+        System.out.println("불금이다!");
+        break;
+      default:
+        System.out.println("주말 잘 즐기자!");
+        break;
+    }
+    String color = "green";
+    switch (color){
+      case "red":
+        System.out.println("apple");
+        break;
+      case "green":
+        System.out.println("forest");
+        break;
+      case "yellow":
+        System.out.println("orange");
+        break;
+    }
+     */
+
+
+
     }
   }
-}
+
