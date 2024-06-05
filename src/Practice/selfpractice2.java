@@ -301,7 +301,7 @@ public class selfpractice2 {
     System.out.println("양수의 합= " + posSum);
     System.out.println("음수의 합= " + negSum);
 
-    */
+
     int sum = 0;
     for (int i = 0; i < 100; i++) {
       if (i % 2 == 0) {
@@ -309,5 +309,40 @@ public class selfpractice2 {
       }
     }
     System.out.println("짝수의 총합: " + sum);
+
+      int sum = 0;
+      for (int i=1; i<=20; i++){
+          if(i%3==0&&i%5==0){
+              sum+=i;
+          }
+      }
+    System.out.println(sum);
+
+
+        // 피보나치 //
+      int[] fibArr = new int[10];
+      fibArr[0] = 1;
+      fibArr[1] = 1;
+      for(int i=2; i<fibArr.length; i++){
+          fibArr[i]=fibArr[i-1]+fibArr[i-2];
+      }
+    System.out.println("피보나치 수열의 첫 10개 항: ");
+      for(int i=0; i<fibArr.length; i++){
+      System.out.println(fibArr[i]+" ");
+      }
+
+
+     */
+
+      // 피보나치 셀프 연습 //
+      int[] arr = new int[100];
+      arr[0] = 1;
+      arr[1] = 1;
+      for (int i=2; i<arr.length; i++) {
+          arr[i] = arr[i-1] + arr[i-2];
+      }
+      for (int i=0; i<arr.length; i++) {
+      System.out.println(arr[i]);
+      }
   }
 }
