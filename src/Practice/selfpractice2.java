@@ -246,10 +246,68 @@ public class selfpractice2 {
         System.out.println("orange");
         break;
     }
-     */
 
-
-
+    // while문 연습 //
+    int i = 10;
+    while (i>=0){
+      System.out.println(i);
+      i--;
     }
-  }
 
+    int n = 100;
+    int i = 1;
+    int sum = 0;
+    while (i<=n){
+      sum += i;
+      i++;
+    }
+    System.out.println(sum);
+
+
+    int[] numbers = {5,2,9,1,7,4,6,3,8};
+    int sum = 0;
+    int i = 0;
+    while (i < numbers.length) {
+      sum += numbers[i];
+      i++;
+    }
+    System.out.println(sum/numbers.length);
+
+    // 배열에서 가장 큰값 찾아 출력하기 재도전 //
+    int[] numbers = {10, 5, 8, 20, 3, 15, 9, 2};
+    int max = numbers[0];
+    int i = 1;
+    while (i < numbers.length) {
+      if (max < numbers[i]) {
+        max = numbers[i];
+      }
+      i++;
+    }
+    System.out.println(max); // 20
+
+
+    //주어진 배열에서 양수의 합과 음수의 합을 각각 구하여 출력하는 프로그램을 작성하세요.//
+    int[] numbers = {4, -2, 9, -7, 5, 1, -3, 6, -1, 8};
+    int posSum = 0;
+    int negSum = 0;
+    int i = 0;
+    while (i < numbers.length) {
+      if(numbers[i] >= 0) {
+        posSum += numbers[i];
+      }else if(numbers[i] < 0) {
+        negSum += numbers[i];
+      }i++;
+    }
+    System.out.println("양수의 합= " + posSum);
+    System.out.println("음수의 합= " + negSum);
+
+    */
+    int sum = 0;
+    for (int i = 0; i < 100; i++) {
+      if (i % 2 == 0) {
+        sum += i;
+      }
+    }
+    System.out.println("짝수의 총합: " + sum);
+  }
+}
