@@ -425,8 +425,22 @@ public class selfpractice2 {
       }
     }
 
-    */
 
+    // for 문자열 연습 //
+    String[] words = {"apple", "banana", "cherry", "durian"};
+    for(int i=0; i<words.length-1; i++){
+      for(int j=i+1; j<words.length; j++){
+        System.out.println(words[i]+" "+words[j]);
+      }
+    }
+*/
+    // 이중 for 문 재연습 //
+    String[] words = {"apple","banana","cherry","kiwi"};
+    for (int i=0; i<words.length-1; i++){
+      for (int j=i+1; j<words.length; j++){
+        System.out.println(words[i]+ " " + words[j]);
+      }
+    }
 
   }
 }
