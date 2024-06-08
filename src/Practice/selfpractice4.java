@@ -1,5 +1,6 @@
 package Practice;
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -47,11 +48,22 @@ public class selfpractice4 {
         break;
       }
       }
-    /*
 
+    Random random = new Random();
+    int[] arr = new int[5];
+    ArrayList<Integer> list = new ArrayList<Integer>();
 
-     */
-     */
+    while(list.size()!=6){
+      int number = random.nextInt(45)+1;
+      if(!list.contains(number)){
+        list.add(number);
+      }
     }
-  }
+    for(int data: list){
+      System.out.println(data);
+    }
 
+    */
+
+  }
+}
