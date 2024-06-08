@@ -1,5 +1,7 @@
 package Practice;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -82,8 +84,32 @@ public class selfpractice3 {
 
     sc.close();
 
+    Random random = new Random();
+    int[] arr = new int[6];
+    ArrayList<Integer> list = new ArrayList<Integer>();
+
+    while(list.size()!=6){
+      int number = random.nextInt(45)+1;
+      if(!list.contains(number)){
+        list.add(number);
+      }
+    }
+    for(int data:list){
+      System.out.println(data+"  ");
+    }
+
+
+    String h= "a:b:c:d";
+    String[] split = h.split(":");
+    System.out.println(Arrays.toString(split));
+
      */
 
-
+    String[] words = {"apple", "banana", "cherry", "durian"};
+    for (int i = 0; i < words.length - 1; i++) {
+      for (int j = 1; j < words.length; j++) {
+        System.out.println(words[i] + " " + words[j]);
+      }
+    }
   }
 }
