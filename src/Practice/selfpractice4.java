@@ -1,5 +1,7 @@
 package Practice;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -90,9 +92,36 @@ public class selfpractice4 {
         System.out.println("잘못된 입력입니다!");
         break;
     }
-    */
+
 
     Random random = new Random();
+    Scanner sc = new Scanner(System.in);
+
+    int randomNum = random.nextInt(100) + 1;
+    System.out.println("1부터 100사이의 숫자를 입력하세요.");
+    while (true) {
+      int guessNum = sc.nextInt();
+      if (guessNum > randomNum) {
+        System.out.println("더 작은 숫자입니다.");
+      } else if (guessNum < randomNum) {
+        System.out.println("더 큰 숫자입니다.");
+      } else {
+        System.out.println("정답입니다 ㅊㅋ요!");
+        break;
+      }
+    }
+    sc.close();
+    random = null;
+
+    */
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("영화 제목을 입력하세요.");
+    String movieName = sc.nextLine();
+    System.out.println("인원 수를 입력하세요.");
+    int people = sc.nextInt();
+    sc.nextLine();
+    System.out.println("예매자 성함을 입력하세요.");
 
   }
 }
