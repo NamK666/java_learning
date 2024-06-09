@@ -113,7 +113,7 @@ public class selfpractice4 {
     sc.close();
     random = null;
 
-    */
+
     Scanner sc = new Scanner(System.in);
 
     System.out.println("영화 제목을 입력하세요.");
@@ -122,6 +122,34 @@ public class selfpractice4 {
     int people = sc.nextInt();
     sc.nextLine();
     System.out.println("예매자 성함을 입력하세요.");
+    String name = sc.nextLine();
+    System.out.println("전화 번호를 입력하세요.");
+    int phoneNum = sc.nextInt();
 
+    System.out.println("=====영화 티켓 예매 정보=====");
+    System.out.println("영화 제목: ["+movieName+"]");
+    System.out.println("관람 인원: ["+people+"]명");
+    System.out.println("예매자 이름: ["+name+"]");
+    System.out.println("예매자 전화번호: ["+phoneNum+"]");
+
+    System.out.println("총 결제 금액: ["+(10000*people)+"]원");
+    sc.close();
+
+    */
+    // ArrayList 활용해보기 //
+
+    // ArrayList 생성 (String타입으로 문자열 배열을 만듬)
+    ArrayList<String> brands = new ArrayList<>();
+
+    // 원소 추가
+    brands.add("soloist");
+    brands.add("rafsimons");
+    brands.add("rickowens");
+
+    // 특정 index에 원소 추가하기
+    brands.add(1, "hernan");
+
+    // 원소 접근
+    System.out.println(brands.get(0));
   }
 }
