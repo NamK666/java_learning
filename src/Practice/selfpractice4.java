@@ -63,7 +63,36 @@ public class selfpractice4 {
       System.out.println(data);
     }
 
+    String[] words = {"apple","banana","cherry","durian"};
+    for (int i = 0; i<words.length-1; i++){
+      for (int j= 1; j<words.length; j++){
+        System.out.println(words[i] + " " + words[j]);
+      }
+    }
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("계절을 맞춰보세요.");
+    int num = sc.nextInt();
+    switch (num) {
+      case 1:
+        System.out.println("봄");
+        break;
+        case 2:
+        System.out.println("여름");
+        break;
+        case 3:
+        System.out.println("가을");
+        break;
+        case 4:
+        System.out.println("겨울");
+        break;
+      default:
+        System.out.println("잘못된 입력입니다!");
+        break;
+    }
     */
+
+    Random random = new Random();
 
   }
 }
