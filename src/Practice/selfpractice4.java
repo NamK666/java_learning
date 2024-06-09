@@ -151,5 +151,19 @@ public class selfpractice4 {
 
     // 원소 접근
     System.out.println(brands.get(0));
+
+    // 원소 수정
+    brands.set(3, "RickOwens");
+
+    //원소 삭제
+    brands.remove(1);
+
+    // ArrayList 출력
+    for (String brand: brands){
+      System.out.println(brand);
+    }
+
+    // ArrayList 비우기
+    brands.clear();
   }
 }
