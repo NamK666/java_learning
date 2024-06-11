@@ -12,8 +12,8 @@ public class BankAccountMain {
     BankAccount account = new BankAccount(accountNumber, ownerName);
 
     // 입금 및 출금
-    account.deposit(123123213);
-    account.withdraw(5000);
+    account.deposit(900000); // 예시 입금
+    account.withdraw(5000000); // 예시 출금
 
     // 잔액 조회
     account.printBalance();

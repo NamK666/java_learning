@@ -60,6 +60,17 @@ public class selfpractice5 {
     }
   }
 
-   */
-}
 
+  public static void main(String[] args) {
+    int add = add(1, 2);
+    System.out.println(add); // 3
+    System.out.println(add(1, 2)); // 3
+  }
+
+  static int add(int a, int b) {
+    return a + b;
+  }
+
+   */
+
+}

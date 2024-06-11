@@ -25,9 +25,10 @@ public class BankAccount {
         if(amount <=balance){
             balance -= amount;
       System.out.println(amount + "원이 출금되었습니다.");
+        }else{
+      System.out.println("잔액이 부족합니다.");
         }
     }
-
 
     // 잔액 조회 메소드
     public void printBalance(){
