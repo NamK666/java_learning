@@ -1,3 +1,5 @@
+import p1.Person3;
+
 public class day3 {
   public static void main(String[] args) {
     int number1 = 10;
