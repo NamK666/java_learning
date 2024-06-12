@@ -1,7 +1,23 @@
+/*
 package Practice;
 
 public class selfpractice5 {
-  /*
+
+    public static void main(String[] args){
+    System.out.println("Hello World!");
+
+    selfpractice5 main = new selfpractice5();
+    int result = main.add(1,3);
+    }
+
+
+
+
+
+
+
+
+    /*
   public static void main(String[] args){
     System.out.println(getMid("namkyung"));
     System.out.println(getMid("monitor"));
@@ -71,6 +87,15 @@ public class selfpractice5 {
     return a + b;
   }
 
-   */
+
+    static int div(int a, int b){
+        return a/b;
+    }
+    public static void main(String[] args){
+        int div = div(4,2);
+    }
+
+
 
 }
+*/

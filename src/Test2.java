@@ -1,11 +1,8 @@
 public class Test2 {
-
-  static int add (int a, int b){
-    int sum = a + b;
-    return sum;
+  static int add(int a, int b){
+    return a+b;
   }
-  static int sub (int a, int b){
-    int sub = a - b;
-    return sub;
+  static int sub(int a, int b){
+    return a-b;
   }
 }
