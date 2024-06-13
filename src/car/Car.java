@@ -14,7 +14,6 @@ public class Car {
     return this.speed * 1.6;
     }
 
-
     public void setGear(int gear) {
         this.gear = gear;
     }
