@@ -1,3 +1,4 @@
+/*
 public class BankApplication {
   public static void main(String[] args) {
     BankAccount account = new BankAccount();
@@ -8,3 +9,5 @@ public class BankApplication {
     }
   }
 }
+*/
+
