@@ -1,3 +1,4 @@
+/*
 package Map;
 
 import java.util.Map;
@@ -22,3 +23,5 @@ public class MainStudent {
     }
   }
 }
+*/
+
