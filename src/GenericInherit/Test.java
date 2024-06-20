@@ -1,7 +1,7 @@
 /*
 package GenericInherit;
 
-public class Test {
+public class MyThread {
   public static void main(String[] args) {
 
     ChildProduct<Tv, String, String> product = new ChildProduct<>();
